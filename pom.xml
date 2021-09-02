@@ -37,5 +37,136 @@
 
     </dependencies>
 
-    
+    <properties>
+        <webdrivermanager.version>5.0.1</webdrivermanager.version>
+        <testng.version>7.4.0</testng.version>
+        <carian.core.util.version>7.1.9</carian.core.util.version>
+        <carina.core.common.version>7.1.9</carina.core.common.version>
+        <apache.common.io.version>20030203.000550</apache.common.io.version>
+        <apache.common.lang.version>3.12.0</apache.common.lang.version>
+        <apache.common.logging.version>1.2</apache.common.logging.version>
+        <selenium.4.version>4.0.0-rc-1</selenium.4.version>
+        <report.portal.common.model.version>5.3.3</report.portal.common.model.version>
+        <report.portal.testng.client.version>5.1.0-RC-1</report.portal.testng.client.version>
+        <report.portal.java.client.version>5.1.0-RC-6</report.portal.java.client.version>
+        <cucumber.java.version>6.11.0</cucumber.java.version>
+        <guava.version>30.1.1-jre</guava.version>
+        <lombok.version>1.18.20</lombok.version>
+        <gson.version>2.8.8</gson.version>
+
+    </properties>
+    <dependencies>
+
+        <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>${gson.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>${guava.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>${cucumber.java.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.epam.reportportal/client-java -->
+        <dependency>
+            <groupId>com.epam.reportportal</groupId>
+            <artifactId>client-java</artifactId>
+            <version>${report.portal.java.client.version}</version>
+        </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/com.epam.reportportal/agent-java-testng -->
+        <dependency>
+            <groupId>com.epam.reportportal</groupId>
+            <artifactId>agent-java-testng</artifactId>
+            <version>${report.portal.testng.client.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>${webdrivermanager.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.4.0</version>
+            <scope>${testng.version}</scope>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.qaprosoft/carina-utils -->
+        <dependency>
+            <groupId>com.qaprosoft</groupId>
+            <artifactId>carina-utils</artifactId>
+            <version>${carian.core.util.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.qaprosoft/carina-commons -->
+        <dependency>
+            <groupId>com.qaprosoft</groupId>
+            <artifactId>carina-commons</artifactId>
+            <version>${carina.core.common.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.epam.reportportal/commons-model -->
+        <dependency>
+            <groupId>com.epam.reportportal</groupId>
+            <artifactId>commons-model</artifactId>
+            <version>${report.portal.common.model.version}</version>
+        </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>${apache.common.io.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>${apache.common.lang.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/commons-logging/commons-logging -->
+        <dependency>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+            <version>${apache.common.logging.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>${selenium.4.version}</version>
+        </dependency>
+    </dependencies>
+
+
 </project>
